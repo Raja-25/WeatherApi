@@ -7,9 +7,9 @@ function App() {
   return (
     <>
 
-   <Weather></Weather>
-   <ToastContainer></ToastContainer>
-   </>
+      <Weather></Weather>
+      <ToastContainer></ToastContainer>
+    </>
   );
 }
 

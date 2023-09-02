@@ -46,55 +46,55 @@ const Weather = () => {
 
 
     return (
-        
+
         <div className='maindiv'>
             <div class="search-box">
                 <button onClick={handleGetWeather} class="btn-search"><FontAwesomeIcon icon={faMagnifyingGlass} bounce /></button>
                 <input type="text" value={location} onChange={handleLocationChange} class="input-search" />
             </div>
             {weather && (
-               <table className='table  table-hover glassmorphism'>
-               <tr>
-                   <th colspan="2">{location}</th>
-               </tr>
-               <tr>
-                   <th>Cloud Coverage</th>
-                   <td>{weather.cloud_pct}</td>
-               </tr>
-               <tr>
-                   <th>Humidity</th>
-                   <td>{weather.humidity}</td>
-               </tr>
-               <tr>
-                   <th>Wind Speed</th>
-                   <td>{weather.wind_speed}</td>
-               </tr>
-               <tr>
-                   <th>Wind Degrees</th>
-                   <td>{weather.wind_degrees}</td>
-               </tr>
-               <tr>
-                   <th>Current Temperature</th>
-                   <td>{weather.temp}</td>
-               </tr>
-               <tr>
-                   <th>Minimum Temperature</th>
-                   <td>{weather.min_temp}</td>
-               </tr>
-               <tr>
-                   <th>Maximum Temperature</th>
-                   <td>{weather.max_temp}</td>
-               </tr>
-               <tr>
-                   <th>Sunrise</th>
-                   <td>{weather.sunrise}</td> 
-               </tr> 
-               <tr> 
-                   <th>Sunset</th> 
-                   <td>{weather.sunset}</td> 
-               </tr> 
-           </table> 
-           
+                <table className='table  table-hover glassmorphism'>
+                    <tr>
+                        <th colspan="2">{location}</th>
+                    </tr>
+                    <tr>
+                        <th>Cloud Coverage</th>
+                        <td>{weather.cloud_pct}</td>
+                    </tr>
+                    <tr>
+                        <th>Humidity</th>
+                        <td>{weather.humidity}</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed</th>
+                        <td>{weather.wind_speed}</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Degrees</th>
+                        <td>{weather.wind_degrees}</td>
+                    </tr>
+                    <tr>
+                        <th>Current Temperature</th>
+                        <td>{weather.temp}</td>
+                    </tr>
+                    <tr>
+                        <th>Minimum Temperature</th>
+                        <td>{weather.min_temp}</td>
+                    </tr>
+                    <tr>
+                        <th>Maximum Temperature</th>
+                        <td>{weather.max_temp}</td>
+                    </tr>
+                    <tr>
+                        <th>Sunrise</th>
+                        <td>{weather.sunrise}</td>
+                    </tr>
+                    <tr>
+                        <th>Sunset</th>
+                        <td>{weather.sunset}</td>
+                    </tr>
+                </table>
+
             )}
         </div>
     );
